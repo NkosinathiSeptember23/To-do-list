@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(182, 171, 182);
+  background-image: url('/public/back.jpg') ; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +19,17 @@ body {
 }
 
 h1 {
-  color: #555;
+  color: #3a506b; /* Dark blue for heading */
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
 }
 
 .TodoWrapper {
-  background: lightblue;
-  margin-top: 5rem;
+  background: #ebe0a8; 
+  margin-top: 12rem;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 15px;
+  width: 600px;
 }
 
 .TodoForm {
@@ -38,32 +39,37 @@ h1 {
 
 .todo-input {
   outline: none;
-  background: none;
-  border: 1px solid #555;
+  background: #fffcf2; /* Very light cream */
+  border: 1px solid #3a506b; /* Dark blue border */
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 300px;
-  color: #555;
+  color: #2e2e2e; /* Dark gray text */
 }
 
 .todo-input::placeholder {
-  color: #ffffff4d;
+  color: #3a506b; /* Dark blue placeholder text */
 }
 
 .todo-btn {
-  background: #a49fb1;
+  background: #3a506b; /* Deep green button */
   color: #fff;
   border: none;
   padding: 0.55rem;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-btn:hover {
+  background: #145a3e; /* Darker green on hover */
 }
 
 .Todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #9e99ac;
+  background: #577590; /* Muted navy blue for tasks */
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;
@@ -72,6 +78,8 @@ h1 {
 
 .fa-trash {
   margin-left: 0.75rem;
+  color: black; /* Coral red for delete icon */
+  cursor: pointer;
 }
 
 .incompleted {
@@ -80,7 +88,7 @@ h1 {
 }
 
 .completed {
-  color: #aeffc2;
+  color: #151615; /* Light green for completed */
   text-decoration: line-through;
   cursor: pointer;
 }
@@ -88,5 +96,5 @@ h1 {
 .edit-icon,
 .delete-icon {
   cursor: pointer;
+  color: #ffd166; /* Soft yellow for icons */
 }
- 
