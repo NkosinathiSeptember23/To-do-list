@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/public/back.jpg') ; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #3a506b; /* Dark blue for heading */
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #ebe0a8; 
+  margin-top: 12rem;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 600px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #fffcf2; /* Very light cream */
+  border: 1px solid #3a506b; /* Dark blue border */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #2e2e2e; /* Dark gray text */
+}
+
+.todo-input::placeholder {
+  color: #3a506b; /* Dark blue placeholder text */
+}
+
+.todo-btn {
+  background: #3a506b; /* Deep green button */
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-btn:hover {
+  background: #145a3e; /* Darker green on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #577590; /* Muted navy blue for tasks */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+  color: black; /* Coral red for delete icon */
+  cursor: pointer;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #151615; /* Light green for completed */
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  color: #ffd166; /* Soft yellow for icons */
+}
